@@ -40,6 +40,7 @@ export default function MiniCube() {
           transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`,
         }}
       >
+        <div className="mini-cube-arrow">←</div>
         {[0, 1, 2, 3, 4, 5].map((face) => (
           <div key={face} className={`mini-cube-face face-${face}`} />
         ))}

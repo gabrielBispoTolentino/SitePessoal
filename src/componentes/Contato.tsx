@@ -8,7 +8,6 @@ export default function Contato() {
   return (
     <div className="page-container">
       <MiniCube />
-      <button className="back-button" onClick={() => navigate('/')}>← Voltar</button>
       <h1>Contato</h1>
       <div className="content">
         <p>Bem-vindo à seção de Contato</p>
