@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 .home-container {
   display: flex;
   flex-direction: column;
@@ -38,7 +39,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   user-select: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .cube-label {
@@ -46,16 +47,25 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   color: #000000;
   z-index: 10;
   text-align: center;
-  pointer-events: none;
-  
+  pointer-events: auto;
+  background-color: #ffffff;
+  border-radius: 6px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.cube-label:hover {
+  background-color: #cd4e4e;
+  color: #ffffff;
+}
 .cube-face:hover > div {
   background-color: #cd4e4e !important;
   filter: brightness(1.1);
@@ -74,6 +84,7 @@
 .cube-face-0 {
   transform: translateZ(100px);
 }
+
 
 .cube-face-1 {
   transform: rotateY(180deg) translateZ(100px);
