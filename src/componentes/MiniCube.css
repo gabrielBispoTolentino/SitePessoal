@@ -17,7 +17,6 @@
   font-size: 1.6rem;
   font-weight: 700;
   color: #000;
-  z-index: 101;
   animation: arrowPulse 2s infinite;
   pointer-events: none;
   width: 100%;

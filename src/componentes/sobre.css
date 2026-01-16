@@ -1,0 +1,320 @@
+/* Sobre.css */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Tamanhos dos Cards */
+.bento-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid #e5e5e5;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #000;
+}
+
+/* Card Large - 2x2 */
+.card-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Card Medium - 2x1 ou 1x2 */
+.card-medium {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+/* Card Small - 1x1 */
+.card-small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* Estilos Específicos dos Cards */
+
+/* Card Bio */
+.bento-card h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.bento-card p {
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.bento-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Card Foto */
+.card-photo {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color: white;
+  border: none;
+}
+
+.photo-placeholder {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(10px);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.photo-caption {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white !important;
+}
+
+/* Card Stats */
+.card-stat {
+  text-align: center;
+  justify-content: center;
+  background: #000;
+  color: white;
+  border: none;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+/* Card Localização */
+.card-location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.location-icon {
+  font-size: 2.5rem;
+}
+
+.card-location h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-location p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Card Tech */
+.card-tech h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* CSS para os ícones */
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #000000;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.tech-item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Ícone para cada tech */
+.tech-item.react::before {
+  background-image: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg');
+}
+
+.tech-item.typescript::before {
+  background-image: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg');
+}
+
+.tech-item.vite::before {
+  background-image: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg');
+}
+
+.tech-item.nodejs::before {
+  background-image: url('https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg');
+}
+
+.tech-item:hover {
+  background: #000;
+  transform: scale(1.05);
+}
+
+.tech-item span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.tech-item:hover span {
+  color: #fff;
+}
+
+/* Card Hobbies */
+.card-hobbies h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-hobbies ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-hobbies li {
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  color: #666;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.card-hobbies li:last-child {
+  border-bottom: none;
+}
+
+/* Card CTA */
+.card-cta {
+  background: white;
+  color: white;
+  border: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-cta h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.card-cta p {
+  color: rgba(0, 0, 0, 0.9) !important;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.card-cta button {
+  background: rgb(0, 0, 0);
+  color: #667eea;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card-cta button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .card-large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .card-medium {
+    grid-column: span 2;
+  }
+  
+  .card-small {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .card-large,
+  .card-medium,
+  .card-small {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .photo-placeholder {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}

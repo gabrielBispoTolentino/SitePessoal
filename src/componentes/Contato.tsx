@@ -13,9 +13,8 @@ export default function Contato() {
         <p>Bem-vindo à seção de Contato</p>
         <p>Entre em contato comigo através dos seguintes canais:</p>
         <ul>
-          <li>Email: seu-email@example.com</li>
-          <li>LinkedIn: seu-linkedin</li>
-          <li>Twitter: seu-twitter</li>
+          <li>Email: tolentinocrb@gmail.com</li>
+          <li>Twitter: @e_pedras</li>
         </ul>
       </div>
     </div>

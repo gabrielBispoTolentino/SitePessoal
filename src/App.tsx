@@ -8,6 +8,7 @@ import Blogs from './componentes/Blogs';
 import Github from './componentes/Github';
 import Projetos from './componentes/Projetos';
 import Contato from './componentes/Contato';
+import Sobre from './componentes/Sobre';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,7 +22,7 @@ function App() {
         <Route path="/github" element={<Github></Github>} />
         <Route path="/projetos" element={<Projetos></Projetos>} />
         <Route path="/contato" element={<Contato></Contato>} />
-        <Route path="/about" element={<div>About</div>} />
+        <Route path="/about" element={<Sobre></Sobre>} />
       </Routes>
     </BrowserRouter>
     </>
